@@ -1,0 +1,20 @@
+.works {
+  min-height: 70vh;
+  text-align: center;
+
+    .sub-title {
+        margin: 5vh 0;
+  }
+
+    .tbn {
+        width: 25%;
+        margin: 5% 0;
+        border-radius: 50%;
+  }
+    .works-list {
+        display: inline;
+    }
+    .works-list:first-of-type {
+        margin-right: 10%;
+  }
+}

@@ -1,0 +1,85 @@
+.skills {
+  font-size: 0;
+  margin-top: 2rem;
+
+    .sub-title{
+      margin: 1% 0 5% 0;
+      font-family: $bitter;
+      font-size: 3.5rem;
+    }
+
+    .skills-title+.fa {
+      position: absolute;
+      top: 84%;
+      left: 30%;
+      opacity: 0.4;
+      font-size: 10rem;
+      color: $dark-blue;
+      z-index: -1;
+    }
+
+    .fa {
+      font-size: 5rem;
+      color: $dark-blue;
+    }
+
+    .art {
+      border: 1px dashed $light-blue;
+      padding: 1rem;
+      font-size: 1.3rem;
+      display: inline-block;
+      width: 25%;
+      margin-right: 2.5%;
+      text-align: center;
+      vertical-align: top;
+
+        &:first-of-type {
+            margin-left: 10%;
+        }
+        &:last-of-type {
+          margin-right: 10%;
+        }
+    }
+
+    .art-title {
+      font-family: $bitter;
+      font-size: 2rem;
+      padding: 1rem 0;
+      color: $dark-blue;
+      text-shadow: 1px 1px 0 $light-blue,
+                     2px 2px 0 $light-blue,
+                     3px 3px 0 $light-blue;
+    }
+
+    .art {
+      min-height: 60vh;
+    }
+
+    .skills-list {
+      text-align: left;
+      list-style-type: circle;
+      padding: 0 2rem;
+          & .skills-detail {
+            margin-top: 1.5rem;
+            line-height: 1.5rem;
+          }
+    }
+
+    .parralax {
+      background-image: url("../assets/images/bkg-works.jpg");
+      color: $white;
+      font-size: 2rem;
+      font-weight: 200;
+      text-align: center;
+      margin-top: 5%;
+      padding: 5vh 0;
+      text-shadow: 1px 1px 0 $dark-blue;
+    }
+
+    .italic {
+      font-style: italic;
+      display: block;
+      margin-top: 10px;
+      font-size: 1.5rem;
+    }
+}

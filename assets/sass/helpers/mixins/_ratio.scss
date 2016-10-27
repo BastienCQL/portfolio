@@ -1,0 +1,17 @@
+// Ratio Mixin //
+@mixin ratio($x, $y) {
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+        content: '';
+        display: block;
+        padding-top: percentage($y / $x);
+    }
+
+    .ratio-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}

@@ -1,0 +1,28 @@
+// ---------------------- //
+// Import Bootstrap files //
+// ---------------------- //
+
+/*
+    Import what you need from bootstrap, do not import what you will not use.
+        - Use 'bootstrap-overides' if you need to overide some default bootstrap variables (example: MD container width).
+        - Use 'bootstrap-extras' if you need to add extra bootstrap styles (example: Extra "LG" breakpoint).
+
+    If bootstrap needs to be updated, update the src folder. 'bootstrap-overides' & 'bootstrap-extras' are custom files.
+*/
+
+// Overides //
+@import "bootstrap-overides";
+
+// Core variables and mixins
+@import "src/variables";
+@import "src/mixins";
+
+// Core CSS
+@import "src/grid";
+
+// Utility classes
+@import "src/utilities";
+@import "src/responsive-utilities";
+
+// Custom overides //
+@import "bootstrap-extras";

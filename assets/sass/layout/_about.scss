@@ -1,0 +1,29 @@
+.about {
+  min-height: 65vh;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  text-align: justify;
+    .about-left,
+    .about-right {
+       margin-bottom: 5%;
+       line-height: 2rem;
+    }
+    .about-left {
+      width: 30%;
+      float: left;
+      margin: 5%;
+    }
+    .about-right {
+      width: 30%;
+      float: right;
+      margin-top: 5%;
+      margin-right: 5%;
+    }
+    .me {
+      margin-bottom: 5%;
+    }
+    .profile-pic {
+      width: 20%;
+      margin-top: 5%;
+    }
+}

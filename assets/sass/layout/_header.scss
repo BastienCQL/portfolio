@@ -1,0 +1,81 @@
+header {
+  background: url("../assets/images/bkg-header-fox.jpg");
+  background-position: right top;
+  background-size: cover;
+  min-height: 85vh;
+  text-align: center;
+}
+
+.header-name,
+.header-title {
+  color: $light-blue;
+  // text-shadow: $shadow-dark-blue;
+}
+
+.nav-bar {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  width: 100%;
+  padding: 0 5%;
+  margin: 5% 0;
+  height: 80px;
+  line-height: 80px;
+}
+
+.inner-nav {
+    float: right;
+}
+
+.header-name{
+  font-size: 3rem;
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+
+.nav-link {
+  font-family: $josefin;
+  color: $white;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 $dark-blue;
+  margin-right: 2%;
+  text-transform: uppercase;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.nav-link
+.header-title {
+  text-align: center;
+  margin-top: 5%;
+  font-size: 4rem;
+}
+.header-span {
+  display: block;
+  font-size: 1.5rem;
+  margin: 5%;
+}
+
+.fa-chevron-down {
+  text-align: center;
+  display: block;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  font-size: 2rem;
+  color: $white;
+  top: 65vh;
+  animation: arrowMove 1s infinite;
+}
+.fade {
+    opacity: 1;
+    transition: all 175ms ease;
+
+    &.hide {
+        animation: none;
+        opacity: 0;
+    }
+}

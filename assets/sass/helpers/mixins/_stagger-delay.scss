@@ -1,0 +1,10 @@
+// Stagger Delay Mixin //
+@mixin stagger-delay($delay: 0.1s,$total: 1, $start: 0s, $kind: "of-type"){
+    $i: 0;
+    @while $i < $total {
+        &:nth-#{$kind}( -#{$total}n+#{$i+1}) {
+            transition-delay: #{$start+($delay*$i)};
+        }
+        $i: $i+1;
+    }
+}

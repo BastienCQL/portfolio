@@ -1,0 +1,17 @@
+.header-name,
+.header-title,
+.skills-pv-title,
+.sub-title {
+  font-family: $bitter;
+  font-weight: normal;
+  font-size: 4rem;
+  letter-spacing: 3px;
+}
+
+.sub-title {
+  text-transform: capitalize;
+  text-align: center;
+  color: $dark-blue;
+  text-shadow: $shadow-light-blue;
+  font-size: 3.5rem;
+}

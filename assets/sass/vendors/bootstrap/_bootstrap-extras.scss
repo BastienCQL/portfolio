@@ -1,0 +1,94 @@
+/*
+Version: 0.1
+Description:
+Adds extra bootstrap functions :
+    - New "wd" (wide) breakpoint.
+    - New "no-gutter" class.
+*/
+
+// New "wd" breakpoint (wide) //
+$screen-wd:                  1440px !default;
+$screen-wd-min:              $screen-wd !default;
+$screen-wd-desktop:          $screen-wd-min !default;
+
+$screen-lg-max:              ($screen-wd-min - 1) !default;
+$container-xlarge-desktop:   (1280px + $grid-gutter-width) !default;
+$container-wd:               $container-xlarge-desktop !default;
+
+.container {
+    @include container-fixed;
+
+    @media (min-width: $screen-wd-min) {
+        width: $container-wd;
+    }
+}
+
+@media (min-width: $screen-wd-min) {
+    @include make-grid(wd);
+}
+
+// Generate the xlarge columns
+@mixin make-wd-column($columns, $gutter: $grid-gutter-width) {
+    position: relative;
+    min-height: 1px;
+    padding-left:  ($gutter / 2);
+    padding-right: ($gutter / 2);
+
+    @media (min-width: $screen-wd-min) {
+        float: left;
+        width: percentage(($columns / $grid-columns));
+    }
+}
+
+@mixin make-wd-column-offset($columns) {
+    @media (min-width: $screen-wd-min) {
+        margin-left: percentage(($columns / $grid-columns));
+    }
+}
+
+@mixin make-wd-column-push($columns) {
+    @media (min-width: $screen-wd-min) {
+        left: percentage(($columns / $grid-columns));
+    }
+}
+
+@mixin make-wd-column-pull($columns) {
+    @media (min-width: $screen-wd-min) {
+        right: percentage(($columns / $grid-columns));
+    }
+}
+
+@mixin make-grid-columns($i: 1, $list: ".col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}, .col-wd-#{$i}") {
+    @for $i from (1 + 1) through $grid-columns {
+        $list: "#{$list}, .col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}, .col-wd-#{$i}";
+    }
+    #{$list} {
+        position: relative;
+        min-height: 1px;
+        padding-left:  ($grid-gutter-width / 2);
+        padding-right: ($grid-gutter-width / 2);
+    }
+}
+
+// Extra styles for no-gutter //
+.no-gutter {
+    &.top {
+        padding-top: 0px;
+    }
+
+    &.right {
+        padding-right: 0px;
+    }
+
+    &.bottom {
+        padding-bottom: 0px;
+    }
+
+    &.left {
+        padding-left: 0px;
+    }
+
+    &.all {
+        padding: 0px;
+    }
+}
