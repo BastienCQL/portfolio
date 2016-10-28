@@ -396,9 +396,8 @@ header {
 .skills .sub-title {
   margin: 1% 0 5% 0;
   font-family: "Julius Sans One", cursive, sans-serif;
-  font-size: 3.5rem;
 }
-/* line 11, ../assets/sass/layout/_skills.scss */
+/* line 10, ../assets/sass/layout/_skills.scss */
 .skills .skills-title + .fa {
   position: absolute;
   top: 84%;
@@ -408,12 +407,12 @@ header {
   color: #0F1626;
   z-index: -1;
 }
-/* line 21, ../assets/sass/layout/_skills.scss */
+/* line 20, ../assets/sass/layout/_skills.scss */
 .skills .fa {
   font-size: 5rem;
   color: #0F1626;
 }
-/* line 26, ../assets/sass/layout/_skills.scss */
+/* line 25, ../assets/sass/layout/_skills.scss */
 .skills .art {
   border: 1px dashed #99CED4;
   padding: 1rem;
@@ -424,15 +423,15 @@ header {
   text-align: center;
   vertical-align: top;
 }
-/* line 36, ../assets/sass/layout/_skills.scss */
+/* line 35, ../assets/sass/layout/_skills.scss */
 .skills .art:first-of-type {
   margin-left: 10%;
 }
-/* line 39, ../assets/sass/layout/_skills.scss */
+/* line 38, ../assets/sass/layout/_skills.scss */
 .skills .art:last-of-type {
   margin-right: 10%;
 }
-/* line 44, ../assets/sass/layout/_skills.scss */
+/* line 43, ../assets/sass/layout/_skills.scss */
 .skills .art-title {
   font-family: "Julius Sans One", cursive, sans-serif;
   font-size: 2rem;
@@ -440,22 +439,22 @@ header {
   color: #0F1626;
   text-shadow: 1px 1px 0 #99CED4, 2px 2px 0 #99CED4, 3px 3px 0 #99CED4;
 }
-/* line 54, ../assets/sass/layout/_skills.scss */
+/* line 53, ../assets/sass/layout/_skills.scss */
 .skills .art {
   min-height: 60vh;
 }
-/* line 58, ../assets/sass/layout/_skills.scss */
+/* line 57, ../assets/sass/layout/_skills.scss */
 .skills .skills-list {
   text-align: left;
   list-style-type: circle;
   padding: 0 2rem;
 }
-/* line 62, ../assets/sass/layout/_skills.scss */
+/* line 61, ../assets/sass/layout/_skills.scss */
 .skills .skills-list .skills-detail {
   margin-top: 1.5rem;
   line-height: 1.5rem;
 }
-/* line 68, ../assets/sass/layout/_skills.scss */
+/* line 67, ../assets/sass/layout/_skills.scss */
 .skills .parralax {
   background-image: url("../assets/images/bkg-works.jpg");
   color: #ffffff;
@@ -466,7 +465,7 @@ header {
   padding: 5vh 0;
   text-shadow: 1px 1px 0 #0F1626;
 }
-/* line 79, ../assets/sass/layout/_skills.scss */
+/* line 78, ../assets/sass/layout/_skills.scss */
 .skills .italic {
   font-style: italic;
   display: block;
@@ -563,7 +562,7 @@ header {
 .sub-title {
   font-family: "Julius Sans One", cursive, sans-serif;
   font-weight: normal;
-  font-size: 4rem;
+  font-size: 3rem;
   letter-spacing: 2px;
 }
 
@@ -573,7 +572,7 @@ header {
   text-align: center;
   color: #0F1626;
   text-shadow: 1px 1px 0 #99CED4, 2px 2px 0 #99CED4, 3px 3px 0 #99CED4, 4px 4px 0 #99CED4, 5px 5px 0 #99CED4;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 
 /* line 1, ../assets/sass/components/ui/_buttons.scss */
@@ -618,6 +617,17 @@ header {
 
   /* line 8, ../assets/sass/components/ui/_queries.scss */
   .inner-nav {
+    display: none;
+  }
+
+  /* line 11, ../assets/sass/components/ui/_queries.scss */
+  .header-title,
+  .btn {
+    margin-top: 6rem;
+  }
+
+  /* line 15, ../assets/sass/components/ui/_queries.scss */
+  .fa.fade {
     display: none;
   }
 }
