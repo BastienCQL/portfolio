@@ -322,9 +322,11 @@ header {
 /* line 26, ../assets/sass/layout/_header.scss */
 .inner-nav {
   float: right;
+  width: 30%;
+  text-align: right;
 }
 
-/* line 30, ../assets/sass/layout/_header.scss */
+/* line 32, ../assets/sass/layout/_header.scss */
 .header-name {
   font-size: 3rem;
   display: inline-block;
@@ -332,7 +334,7 @@ header {
   text-transform: capitalize;
 }
 
-/* line 37, ../assets/sass/layout/_header.scss */
+/* line 39, ../assets/sass/layout/_header.scss */
 .nav-link {
   font-family: "Josefin Sans", sans-serif;
   color: #ffffff;
@@ -341,12 +343,12 @@ header {
   margin-right: 2%;
   text-transform: uppercase;
 }
-/* line 45, ../assets/sass/layout/_header.scss */
+/* line 47, ../assets/sass/layout/_header.scss */
 .nav-link:last-of-type {
   margin-right: 0;
 }
 
-/* line 50, ../assets/sass/layout/_header.scss */
+/* line 52, ../assets/sass/layout/_header.scss */
 .nav-link
 .header-title {
   text-align: center;
@@ -354,14 +356,14 @@ header {
   font-size: 4rem;
 }
 
-/* line 56, ../assets/sass/layout/_header.scss */
+/* line 58, ../assets/sass/layout/_header.scss */
 .header-span {
   display: block;
   font-size: 1.5rem;
   margin: 5%;
 }
 
-/* line 62, ../assets/sass/layout/_header.scss */
+/* line 64, ../assets/sass/layout/_header.scss */
 .fa-chevron-down {
   text-align: center;
   display: block;
@@ -374,12 +376,12 @@ header {
   animation: arrowMove 1s infinite;
 }
 
-/* line 73, ../assets/sass/layout/_header.scss */
+/* line 75, ../assets/sass/layout/_header.scss */
 .fade {
   opacity: 1;
   transition: all 175ms ease;
 }
-/* line 77, ../assets/sass/layout/_header.scss */
+/* line 79, ../assets/sass/layout/_header.scss */
 .fade.hide {
   animation: none;
   opacity: 0;
@@ -393,7 +395,7 @@ header {
 /* line 5, ../assets/sass/layout/_skills.scss */
 .skills .sub-title {
   margin: 1% 0 5% 0;
-  font-family: "Bungee Hairline", arial, sans-serif;
+  font-family: "Julius Sans One", cursive, sans-serif;
   font-size: 3.5rem;
 }
 /* line 11, ../assets/sass/layout/_skills.scss */
@@ -432,7 +434,7 @@ header {
 }
 /* line 44, ../assets/sass/layout/_skills.scss */
 .skills .art-title {
-  font-family: "Bungee Hairline", arial, sans-serif;
+  font-family: "Julius Sans One", cursive, sans-serif;
   font-size: 2rem;
   padding: 1rem 0;
   color: #0F1626;
@@ -559,10 +561,10 @@ header {
 .header-title,
 .skills-pv-title,
 .sub-title {
-  font-family: "Bungee Hairline", arial, sans-serif;
+  font-family: "Julius Sans One", cursive, sans-serif;
   font-weight: normal;
   font-size: 4rem;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 /* line 11, ../assets/sass/components/ui/_titles.scss */
