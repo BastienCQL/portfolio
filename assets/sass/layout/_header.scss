@@ -9,7 +9,6 @@ header {
 .header-name,
 .header-title {
   color: $light-blue;
-  // text-shadow: $shadow-dark-blue;
 }
 
 .nav-bar {
@@ -25,8 +24,14 @@ header {
 
 .inner-nav {
   float: right;
-  width: 30%;
+  width: 50%;
   text-align: right;
+    .nav-link {
+      margin-right: 2rem;
+    }
+    .nav-link:last-of-type {
+      margin-right: 0;
+    }
 }
 
 .header-name{
@@ -40,7 +45,6 @@ header {
   font-family: $josefin;
   color: $white;
   text-decoration: none;
-  text-shadow: 1px 1px 0 $dark-blue;
   margin-right: 2%;
   text-transform: uppercase;
 

@@ -15,4 +15,34 @@
   .fa.fade {
     display: none;
   }
+  .skills .art {
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: 2rem auto;
+  }
+  .skills .skills-list {
+    text-align: center;
+    list-style-type: none;
+  }
+  .works .tbn {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    border-radius: 50%;
+  }
+  .about .about-left,
+  .about .about-right {
+    display: block;
+    float: none;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about .profile-pic {
+    display: block;
+    width: 30%;
+    margin: 2rem auto;
+}
 }
