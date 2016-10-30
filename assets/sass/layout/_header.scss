@@ -28,9 +28,13 @@ header {
   text-align: right;
     .nav-link {
       margin-right: 2rem;
+      transition: all 175ms ease-in-out;
     }
     .nav-link:last-of-type {
       margin-right: 0;
+    }
+    .nav-link:hover {
+      color: $light-blue;
     }
 }
 

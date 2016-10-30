@@ -328,13 +328,18 @@ header {
 /* line 29, ../assets/sass/layout/_header.scss */
 .inner-nav .nav-link {
   margin-right: 2rem;
+  transition: all 175ms ease-in-out;
 }
-/* line 32, ../assets/sass/layout/_header.scss */
+/* line 33, ../assets/sass/layout/_header.scss */
 .inner-nav .nav-link:last-of-type {
   margin-right: 0;
 }
+/* line 36, ../assets/sass/layout/_header.scss */
+.inner-nav .nav-link:hover {
+  color: #99CED4;
+}
 
-/* line 37, ../assets/sass/layout/_header.scss */
+/* line 41, ../assets/sass/layout/_header.scss */
 .header-name {
   font-size: 3rem;
   display: inline-block;
@@ -342,7 +347,7 @@ header {
   text-transform: capitalize;
 }
 
-/* line 44, ../assets/sass/layout/_header.scss */
+/* line 48, ../assets/sass/layout/_header.scss */
 .nav-link {
   font-family: "Josefin Sans", sans-serif;
   color: #ffffff;
@@ -350,12 +355,12 @@ header {
   margin-right: 2%;
   text-transform: uppercase;
 }
-/* line 51, ../assets/sass/layout/_header.scss */
+/* line 55, ../assets/sass/layout/_header.scss */
 .nav-link:last-of-type {
   margin-right: 0;
 }
 
-/* line 56, ../assets/sass/layout/_header.scss */
+/* line 60, ../assets/sass/layout/_header.scss */
 .nav-link
 .header-title {
   text-align: center;
@@ -363,14 +368,14 @@ header {
   font-size: 4rem;
 }
 
-/* line 62, ../assets/sass/layout/_header.scss */
+/* line 66, ../assets/sass/layout/_header.scss */
 .header-span {
   display: block;
   font-size: 1.5rem;
   margin: 5%;
 }
 
-/* line 68, ../assets/sass/layout/_header.scss */
+/* line 72, ../assets/sass/layout/_header.scss */
 .fa-chevron-down {
   text-align: center;
   display: block;
@@ -383,12 +388,12 @@ header {
   animation: arrowMove 1s infinite;
 }
 
-/* line 79, ../assets/sass/layout/_header.scss */
+/* line 83, ../assets/sass/layout/_header.scss */
 .fade {
   opacity: 1;
   transition: all 175ms ease;
 }
-/* line 83, ../assets/sass/layout/_header.scss */
+/* line 87, ../assets/sass/layout/_header.scss */
 .fade.hide {
   animation: none;
   opacity: 0;
