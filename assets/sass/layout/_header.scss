@@ -5,10 +5,14 @@ header {
   min-height: 85vh;
   text-align: center;
 }
-
 .header-name,
 .header-title {
   color: $light-blue;
+}
+.header-title,
+.btn {
+  animation-name: popContent;
+  animation-duration: 3s;
 }
 
 .nav-bar {
@@ -20,6 +24,8 @@ header {
   margin: 5% 0;
   height: 80px;
   line-height: 80px;
+  animation-name: popNav;
+  animation-duration: 2s;
 }
 
 .inner-nav {

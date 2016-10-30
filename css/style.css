@@ -14,6 +14,34 @@
     opacity: 0.3;
   }
 }
+@keyframes popNav {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes popContent {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  60% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  90% {
+    opacity: 1;
+    transform: scale(1.12);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 /*
 	HTML5 Reset :: style.css
 	----------------------------------------------------------
@@ -287,7 +315,12 @@ html {
   color: #333333;
 }
 
-/* line 5, ../assets/sass/base/_custom-reset.scss */
+/* line 4, ../assets/sass/base/_custom-reset.scss */
+* {
+  transition: all 175ms ease-in-out;
+}
+
+/* line 8, ../assets/sass/base/_custom-reset.scss */
 body {
   font-family: "Josefin Sans", sans-serif;
 }
@@ -301,13 +334,20 @@ header {
   text-align: center;
 }
 
-/* line 9, ../assets/sass/layout/_header.scss */
+/* line 8, ../assets/sass/layout/_header.scss */
 .header-name,
 .header-title {
   color: #99CED4;
 }
 
-/* line 14, ../assets/sass/layout/_header.scss */
+/* line 12, ../assets/sass/layout/_header.scss */
+.header-title,
+.btn {
+  animation-name: popContent;
+  animation-duration: 3s;
+}
+
+/* line 18, ../assets/sass/layout/_header.scss */
 .nav-bar {
   display: inline-block;
   text-align: left;
@@ -317,29 +357,31 @@ header {
   margin: 5% 0;
   height: 80px;
   line-height: 80px;
+  animation-name: popNav;
+  animation-duration: 2s;
 }
 
-/* line 25, ../assets/sass/layout/_header.scss */
+/* line 31, ../assets/sass/layout/_header.scss */
 .inner-nav {
   float: right;
   width: 50%;
   text-align: right;
 }
-/* line 29, ../assets/sass/layout/_header.scss */
+/* line 35, ../assets/sass/layout/_header.scss */
 .inner-nav .nav-link {
   margin-right: 2rem;
   transition: all 175ms ease-in-out;
 }
-/* line 33, ../assets/sass/layout/_header.scss */
+/* line 39, ../assets/sass/layout/_header.scss */
 .inner-nav .nav-link:last-of-type {
   margin-right: 0;
 }
-/* line 36, ../assets/sass/layout/_header.scss */
+/* line 42, ../assets/sass/layout/_header.scss */
 .inner-nav .nav-link:hover {
   color: #99CED4;
 }
 
-/* line 41, ../assets/sass/layout/_header.scss */
+/* line 47, ../assets/sass/layout/_header.scss */
 .header-name {
   font-size: 3rem;
   display: inline-block;
@@ -347,7 +389,7 @@ header {
   text-transform: capitalize;
 }
 
-/* line 48, ../assets/sass/layout/_header.scss */
+/* line 54, ../assets/sass/layout/_header.scss */
 .nav-link {
   font-family: "Josefin Sans", sans-serif;
   color: #ffffff;
@@ -355,12 +397,12 @@ header {
   margin-right: 2%;
   text-transform: uppercase;
 }
-/* line 55, ../assets/sass/layout/_header.scss */
+/* line 61, ../assets/sass/layout/_header.scss */
 .nav-link:last-of-type {
   margin-right: 0;
 }
 
-/* line 60, ../assets/sass/layout/_header.scss */
+/* line 66, ../assets/sass/layout/_header.scss */
 .nav-link
 .header-title {
   text-align: center;
@@ -368,14 +410,14 @@ header {
   font-size: 4rem;
 }
 
-/* line 66, ../assets/sass/layout/_header.scss */
+/* line 72, ../assets/sass/layout/_header.scss */
 .header-span {
   display: block;
   font-size: 1.5rem;
   margin: 5%;
 }
 
-/* line 72, ../assets/sass/layout/_header.scss */
+/* line 78, ../assets/sass/layout/_header.scss */
 .fa-chevron-down {
   text-align: center;
   display: block;
@@ -388,12 +430,12 @@ header {
   animation: arrowMove 1s infinite;
 }
 
-/* line 83, ../assets/sass/layout/_header.scss */
+/* line 89, ../assets/sass/layout/_header.scss */
 .fade {
   opacity: 1;
   transition: all 175ms ease;
 }
-/* line 87, ../assets/sass/layout/_header.scss */
+/* line 93, ../assets/sass/layout/_header.scss */
 .fade.hide {
   animation: none;
   opacity: 0;
@@ -426,41 +468,46 @@ header {
 }
 /* line 25, ../assets/sass/layout/_skills.scss */
 .skills .art {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
   border: 1px dashed #99CED4;
   padding: 1rem;
   font-size: 1.3rem;
-  display: inline-block;
   width: 25%;
+  min-height: 60vh;
   margin-right: 2.5%;
-  text-align: center;
-  vertical-align: top;
 }
-/* line 35, ../assets/sass/layout/_skills.scss */
+/* line 36, ../assets/sass/layout/_skills.scss */
 .skills .art:first-of-type {
   margin-left: 10%;
 }
-/* line 38, ../assets/sass/layout/_skills.scss */
+/* line 39, ../assets/sass/layout/_skills.scss */
 .skills .art:last-of-type {
   margin-right: 10%;
 }
 /* line 43, ../assets/sass/layout/_skills.scss */
+.skills .art:hover {
+  border: 1px dashed #0F1626;
+}
+/* line 45, ../assets/sass/layout/_skills.scss */
+.skills .art:hover .fa {
+  color: #99CED4;
+}
+/* line 49, ../assets/sass/layout/_skills.scss */
 .skills .art-title {
   font-family: "Julius Sans One", cursive, sans-serif;
   font-size: 2rem;
   padding: 1rem 0;
   color: #0F1626;
 }
-/* line 50, ../assets/sass/layout/_skills.scss */
-.skills .art {
-  min-height: 60vh;
-}
-/* line 54, ../assets/sass/layout/_skills.scss */
+/* line 55, ../assets/sass/layout/_skills.scss */
 .skills .skills-list {
   text-align: left;
   list-style-type: circle;
   padding: 0 2rem;
 }
-/* line 58, ../assets/sass/layout/_skills.scss */
+/* line 59, ../assets/sass/layout/_skills.scss */
 .skills .skills-list .skills-detail {
   margin-top: 1.5rem;
   line-height: 1.5rem;
@@ -476,7 +523,7 @@ header {
   padding: 5vh 0;
   text-shadow: 1px 1px 0 #0F1626;
 }
-/* line 75, ../assets/sass/layout/_skills.scss */
+/* line 74, ../assets/sass/layout/_skills.scss */
 .skills .italic {
   font-style: italic;
   display: block;
@@ -547,9 +594,16 @@ header {
 .about .cv {
   text-align: center;
 }
-/* line 32, ../assets/sass/layout/_about.scss */
-.about .btn {
+/* line 31, ../assets/sass/layout/_about.scss */
+.about .cv .btn {
   margin: 2rem auto;
+  border-color: #0F1626;
+  color: #0F1626;
+}
+/* line 36, ../assets/sass/layout/_about.scss */
+.about .cv .btn:hover {
+  color: #ffffff;
+  background-color: #0F1626;
 }
 
 /* line 1, ../assets/sass/layout/_footer.scss */

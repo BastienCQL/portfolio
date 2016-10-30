@@ -1,6 +1,9 @@
 html {
   color: $black;
 }
+* {
+  transition: all 175ms ease-in-out;
+}
 
 body {
   font-family: $josefin;

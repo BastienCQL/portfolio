@@ -28,8 +28,16 @@
     }
     .cv {
       text-align: center;
+      .btn {
+        margin: 2rem auto;
+        border-color: $dark-blue;
+        color: $dark-blue;
+      }
+      .btn:hover {
+        color: $white;
+        background-color: $dark-blue;
+      }
+
     }
-    .btn {
-      margin: 2rem auto;
-    }
+
 }
