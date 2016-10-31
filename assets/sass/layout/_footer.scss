@@ -7,10 +7,13 @@
     text-align: center;
     margin-top: 1%;
     font-size: 2rem;
-    .fa {
+    .fa-link {
       margin-right: 2rem;
     }
-    .fa:last-of-type {
+    .fa-link:before {
+      content: "";
+    }
+    .fa-link:last-of-type {
       margin-right: 0;
     }
     .fa-twitter:hover {

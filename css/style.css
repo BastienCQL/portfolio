@@ -320,9 +320,15 @@ html {
   transition: all 175ms ease-in-out;
 }
 
-/* line 8, ../assets/sass/base/_custom-reset.scss */
+/* line 7, ../assets/sass/base/_custom-reset.scss */
 body {
   font-family: "Josefin Sans", sans-serif;
+}
+
+/* line 10, ../assets/sass/base/_custom-reset.scss */
+a {
+  text-decoration: none;
+  color: #0F1626;
 }
 
 /* line 1, ../assets/sass/layout/_header.scss */
@@ -625,30 +631,34 @@ header {
   font-size: 2rem;
 }
 /* line 10, ../assets/sass/layout/_footer.scss */
-.footer .social .fa {
+.footer .social .fa-link {
   margin-right: 2rem;
 }
 /* line 13, ../assets/sass/layout/_footer.scss */
-.footer .social .fa:last-of-type {
-  margin-right: 0;
+.footer .social .fa-link:before {
+  content: "";
 }
 /* line 16, ../assets/sass/layout/_footer.scss */
+.footer .social .fa-link:last-of-type {
+  margin-right: 0;
+}
+/* line 19, ../assets/sass/layout/_footer.scss */
 .footer .social .fa-twitter:hover {
   color: #4099FF;
 }
-/* line 19, ../assets/sass/layout/_footer.scss */
+/* line 22, ../assets/sass/layout/_footer.scss */
 .footer .social .fa-linkedin:hover {
   color: #0077B5;
 }
-/* line 22, ../assets/sass/layout/_footer.scss */
+/* line 25, ../assets/sass/layout/_footer.scss */
 .footer .social .fa-github:hover {
   color: #c9510c;
 }
-/* line 25, ../assets/sass/layout/_footer.scss */
+/* line 28, ../assets/sass/layout/_footer.scss */
 .footer .social .fa-envelope-o:hover {
   color: #6e5494;
 }
-/* line 28, ../assets/sass/layout/_footer.scss */
+/* line 31, ../assets/sass/layout/_footer.scss */
 .footer .social .fa-phone:hover {
   color: #6cc644;
 }
@@ -768,3 +778,5 @@ header {
     margin: 2rem auto;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
