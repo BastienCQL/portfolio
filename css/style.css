@@ -541,18 +541,23 @@ header {
   margin: 5vh 0;
 }
 /* line 9, ../assets/sass/layout/_works.scss */
+.works .works-list {
+  display: inline;
+}
+/* line 12, ../assets/sass/layout/_works.scss */
+.works .works-list:first-of-type {
+  margin-right: 10%;
+}
+/* line 15, ../assets/sass/layout/_works.scss */
 .works .tbn {
   width: 25%;
   margin: 5% 0;
   border-radius: 50%;
 }
-/* line 14, ../assets/sass/layout/_works.scss */
-.works .works-list {
-  display: inline;
-}
-/* line 17, ../assets/sass/layout/_works.scss */
-.works .works-list:first-of-type {
-  margin-right: 10%;
+/* line 20, ../assets/sass/layout/_works.scss */
+.works .tbn:hover {
+  opacity: 0.5;
+  transform: scale(1.2) rotate(-5deg);
 }
 
 /* line 1, ../assets/sass/layout/_about.scss */
@@ -626,6 +631,26 @@ header {
 /* line 13, ../assets/sass/layout/_footer.scss */
 .footer .social .fa:last-of-type {
   margin-right: 0;
+}
+/* line 16, ../assets/sass/layout/_footer.scss */
+.footer .social .fa-twitter:hover {
+  color: #4099FF;
+}
+/* line 19, ../assets/sass/layout/_footer.scss */
+.footer .social .fa-linkedin:hover {
+  color: #0077B5;
+}
+/* line 22, ../assets/sass/layout/_footer.scss */
+.footer .social .fa-github:hover {
+  color: #c9510c;
+}
+/* line 25, ../assets/sass/layout/_footer.scss */
+.footer .social .fa-envelope-o:hover {
+  color: #6e5494;
+}
+/* line 28, ../assets/sass/layout/_footer.scss */
+.footer .social .fa-phone:hover {
+  color: #6cc644;
 }
 
 /* line 1, ../assets/sass/components/ui/_titles.scss */
@@ -743,5 +768,3 @@ header {
     margin: 2rem auto;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

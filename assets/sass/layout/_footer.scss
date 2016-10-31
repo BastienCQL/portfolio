@@ -13,5 +13,20 @@
     .fa:last-of-type {
       margin-right: 0;
     }
+    .fa-twitter:hover {
+      color: $twitter-blue;
+    }
+    .fa-linkedin:hover {
+      color: $linkedin-blue;
+    }
+    .fa-github:hover {
+      color: $github;
+    }
+    .fa-envelope-o:hover {
+      color: $enveloppe;
+    }
+    .fa-phone:hover {
+      color: $phone;
+    }
   }
 }
