@@ -588,7 +588,7 @@ header {
 .works .wrapper-work {
   margin-bottom: 5%;
   width: 100%;
-  height: 20vh;
+  min-height: 20vh;
   background-image: url(../assets/images/wood.jpg);
   background-position: right top;
   background-size: cover;
@@ -605,11 +605,12 @@ header {
 /* line 42, ../assets/sass/layout/_works.scss */
 .works .work-text:last-of-type {
   padding-top: 3vh;
+  padding-bottom: 5vh;
 }
 
 /* line 1, ../assets/sass/layout/_about.scss */
 .about {
-  min-height: 55vh;
+  min-height: 60vh;
   font-size: 1.3rem;
   line-height: 1.6rem;
   text-align: justify;
