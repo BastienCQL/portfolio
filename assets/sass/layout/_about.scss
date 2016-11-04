@@ -1,5 +1,5 @@
 .about {
-  min-height: 65vh;
+  min-height: 55vh;
   font-size: 1.3rem;
   line-height: 1.6rem;
   text-align: justify;
@@ -37,7 +37,8 @@
         color: $white;
         background-color: $dark-blue;
       }
-
     }
-
+  .underline-link {
+    text-decoration: underline;
+  }
 }
